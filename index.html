@@ -9,18 +9,18 @@
 
 <style>
   :root{
-    --ink:#1A181E; --ink-bar:#141318; --ink-card:#26232B;
-    --bone:#EBE4D7; --bone-card:#F3EDE2;
-    --gold:#E2A23C; --gold-press:#C9882A; --ochre:#8C5E12;
-    --cream:#F3EDE2; --on-dark-mute:#A89E90; --on-light-mute:#6A6256;
-    --line-dark:rgba(243,237,226,.16); --line-light:rgba(26,24,30,.14);
+    --ink:#0E0E0E; --ink-bar:#000000; --ink-card:#363636;
+    --bone:#FFF2DF; --bone-card:#FFFFFF;
+    --gold:#FF8A00; --gold-press:#E67A00; --ochre:#B35E00;
+    --cream:#FFF2DF; --on-dark-mute:#9A9A9A; --on-light-mute:#5A5A55;
+    --line-dark:rgba(255,242,223,.16); --line-light:rgba(20,20,20,.14);
     --disp:"Archivo","Noto Sans SC",sans-serif;
     --sans:"Noto Sans SC","Archivo",sans-serif;
     --maxw:1100px;
   }
   *{box-sizing:border-box}
   html{scroll-behavior:smooth}
-  body{margin:0; font-family:var(--sans); font-size:18px; line-height:1.8; color:var(--ink); background:var(--bone);
+  body{margin:0; font-family:var(--sans); font-size:18px; line-height:1.8; color:var(--cream); background:var(--ink);
     -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility; overflow-x:hidden}
   .wrap{max-width:var(--maxw); margin:0 auto; padding:0 26px}
   h1,h2,h3{margin:0; line-height:1.05; font-weight:900; letter-spacing:-.02em}
@@ -97,7 +97,7 @@
   /* products */
   .products{display:grid; grid-template-columns:1fr 1fr; gap:clamp(22px,2.5vw,32px)}
   .pcard{padding:clamp(34px,3.5vw,46px); border-radius:22px}
-  .bone .pcard{background:var(--ink); color:var(--cream)}
+  .bone .pcard{background:var(--ink-card); color:var(--cream)}
   .pcard.alt{background:var(--gold); color:var(--ink)}
   .pcard .kind{font-family:var(--disp); font-weight:800; font-size:.82rem; letter-spacing:.18em; text-transform:uppercase; opacity:.85}
   .pcard h3{font-family:var(--sans); font-weight:900; font-size:clamp(1.7rem,3vw,2.2rem); margin:.4em 0 .2em}
@@ -150,10 +150,10 @@
 
   /* stories */
   .stories{display:grid; grid-template-columns:1fr 1fr; gap:clamp(22px,2.5vw,34px)}
-  .scard{padding:clamp(32px,3.5vw,46px); background:var(--ink); color:var(--cream); border-radius:22px}
+  .scard{padding:clamp(32px,3.5vw,46px); background:var(--ink-card); color:var(--cream); border-radius:22px}
   .scard .label{font-family:var(--disp); font-weight:700; font-size:.74rem; letter-spacing:.18em; text-transform:uppercase; color:var(--gold)}
   .scard h3{font-family:var(--sans); font-weight:900; font-size:clamp(1.5rem,2.6vw,2rem); margin:.7em 0 .5em}
-  .scard p{color:#D9D1C4; line-height:1.8}
+  .scard p{color:#CBCBCB; line-height:1.8}
   @media(max-width:760px){ .stories{grid-template-columns:1fr} }
 
   /* CTA (gold) + form */
@@ -165,7 +165,7 @@
   form.lf{background:var(--ink); color:var(--cream); padding:clamp(28px,3vw,38px); border-radius:22px}
   label{display:block; font-size:.9rem; color:var(--on-dark-mute); margin:14px 0 7px; font-weight:500}
   input,textarea{width:100%; background:var(--ink-card); border:1px solid var(--line-dark); border-radius:12px; color:var(--cream); font-family:var(--sans); font-size:1rem; padding:.85em .95em; resize:vertical}
-  input::placeholder,textarea::placeholder{color:#857C70}
+  input::placeholder,textarea::placeholder{color:#8C8C8C}
   form.lf .btn{width:100%; justify-content:center; margin-top:22px}
   .form-ok{display:none; text-align:center; padding:22px; font-weight:900; font-size:1.15rem; color:var(--gold)}
   @media(max-width:780px){ .start-grid{grid-template-columns:1fr; gap:34px} }
